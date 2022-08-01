@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+        <title>About the Tool Section</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- header section start -->
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="nav-links">
+                    <i class="fa fa-times" onclick="hideMenu()"></i> <!-- close icon -->
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about_tool.html">ABOUT THE TOOL</a>
+                            <div class="sub-menu-1">
+                                <ul>
+                                    <li><a href="about_tool.html">Download the Tool</a></li>
+                                    <li><a href="database.html">Database</a></li>
+                                    <li><a href="calculator_module.html">Calculator Module</a></li>
+                                    <li class="hover-me"><a href="optimization_module.html">Optimization Module</a><i class="fa fa-angle-right"></i>
+                                        <div class="sub-menu-3">
+                                            <ul>
+                                                <li><a href="#">Rainbow Trout</a></li>
+                                                <li><a href="#">Atlantic Salmon</a></li>
+                                            </ul>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="about_team.html">ABOUT THE TEAM</a></li>
+                        <!-- <li><a href="blog.html">BLOG</a></li> -->
+                        <li><a href="acknowledgments.html">ACKNOWLEDGMENTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i> <!-- menu icon -->
+            </nav>
+            <h1>About the Tool</h1>
+
+        </section>
+        <!-- header section end -->
+
+
+        <!-- about us content start -->
+        <section class="about-us">
+
+            <div class="row">
+                <div class="about-col">
+                    <img src="images/about_brandi.jpg">
+                </div>
+
+                <div class="about-col">
+                    <img src="images/cast.jpg">
+                </div>
+
+                <!-- <div class="about-col">
+                    <h1>CAST</h1>
+                    <h2>Cruz Aquafeed Sustainability Tool</h2>
+                    <p>aquafeed decision-support tool for salmonids<br>
+                    developed by the Kapuscinski-Sarker Lab at the<br>
+                    University of Califonia, Santa Cruz.</p>
+                </div> -->
+            </div>
+
+
+            <div class="row">
+                <div class="about-col">
+                    <h1>We want to make a change</h1>
+                    <p>We have developed a decision-support tool for addressing critical knowledge gaps about environmental and economic sustainability of novel replacements for fishmeal and fish oil in aquafeeds. 
+                        The tool allows users to assess if alternative aquafeed ingredients meet nutritional requirements and promote growth of the farmed organisms, ensure high quality of the final edible product, have low environmental impact, and compete with costs of conventional aquafeed ingredients. 
+                        Inputs to the decision-support software include a meta-model database of: (1) life-cycle assessment data; (2) economic data; and (3) nutrition and growth performance data. 
+                        A user-friendly interface will allow online users to select from a range of novel ingredients and provide data visualizations of the economic and environmental impacts.
+                    </p>
+                    <a href="#" class="hero-btn red-btn">DOWNLOAD THE TOOL</a>
+                </div>
+                <div class="about-col">
+                    <img src="images/about.png">
+                </div>
+            </div>
+
+
+        </section>
+        <!-- about us content end -->
+
+        
+        <!-- Footer section start (1:06:40) -->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Our research team embraces an ecological aquaculture approach to help shift aquaculture to a sustainability path,<br> and flip problems into opportunities for socio-environmental benefits and innovation.</p>
+            <a href="#" class="hero-btn red-btn lab-btn">LEARN MORE ABOUT THE LAB</a>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by Yernar Smagulov</p>
+        </section>
+        <!-- Footer section end -->
+
+
+        <!----- Javascript for Toggle Menu----->
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
